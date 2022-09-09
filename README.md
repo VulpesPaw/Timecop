@@ -26,7 +26,7 @@ We got access to Effectsofts test environments during this project, with access 
 
 This project was version-manged with git and stored on BitBucket.
 
-We got basic pre-developed AOI and convertion -code (out-dated) and soruces of API documentation.
+We got basic pre-developed API and convertion -code (out-dated) and soruces of API documentation.
 
 ### Images
 
