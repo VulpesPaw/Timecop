@@ -1,0 +1,36 @@
+﻿@inherits WorklogListBase
+@using Timecop.Integrations.Tempo
+
+
+<h3>WorklogList</h3>
+
+<table class="table">
+    <tbody>
+        @foreach(var worklog in WorklogList)
+        {
+            <tr >
+                <td style="color:#ddd;">@worklog.IssueKey</td>
+                <td><input @onchange="async(e)=>await UpdateWorkogTime(worklog, long.Parse(e.Value.ToString()))" value=@(worklog?.TimeSpentSeconds) /></td>
+                <td><input @onchange="async(e)=>await UpdateWorklogDescription(worklog, e.Value.ToString())" value=@(worklog?.Description) /></td>
+                <td style="color:#ddd;">@worklog.StartDate</td>
+                <td><button @onclick="(e)=>PushToUpdateForm(worklog,e)">Push to form</button> </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code{
+
+    [CascadingParameter]
+    public CrudState CrudFormState{ get; set; }
+
+
+    public void PushToUpdateForm(Worklog worklog, EventArgs e)
+    {
+        CrudFormState.IssueKey = worklog.IssueKey;
+        CrudFormState.Date = DateTime.Now;
+        CrudFormState.Description = worklog.Description;
+        // Do not include time in update, stopwatch will issue time
+    }
+
+}

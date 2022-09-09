@@ -1,0 +1,67 @@
+﻿
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>
+
+@code {
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    private string issueKey = string.Empty;
+    public string IssueKey { 
+        get { return issueKey; } 
+        set { issueKey = value;
+            StateHasChanged();
+        } }
+
+    private long timeSpentSeconds = 0;
+    public long TimeSpentSeconds { 
+        get { return timeSpentSeconds; } 
+        set { timeSpentSeconds = value;
+            StateHasChanged();
+        } }
+
+//? No need for a public method only used once?
+    //    // Thread-safely calles StateHasChanged. Not dangrous for UI-thread too
+    //public long TimeSpentSecondsThreadSafe {
+    //    get { return timeSpentSeconds; } 
+    //    set { timeSpentSeconds = value;
+    //        this.InvokeAsync(delegate
+    //        {
+    //            StateHasChanged();
+    //        });
+    //    } }
+
+    private string description = string.Empty;
+    public string Description { 
+        get { return description; } 
+        set { description = value;
+            StateHasChanged(); 
+        } }
+     
+
+    private DateTime date = DateTime.Now;
+    public DateTime Date { 
+        get { return date; } 
+        set { date = value;
+            StateHasChanged();
+        } }
+
+        // Allows Dateinput/output as a string
+    public string DateString
+    {
+        get => date.ToString("yyyy-MM-dd");
+        set  {
+            date = ParseToDateTime(value);
+            StateHasChanged(); 
+        }
+    }
+
+        private DateTime ParseToDateTime(string date_string)
+        {
+            return DateTime.ParseExact(date_string, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+        }
+
+}
+

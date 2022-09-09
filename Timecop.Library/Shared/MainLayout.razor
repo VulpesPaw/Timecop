@@ -1,0 +1,23 @@
+﻿@namespace Timecop.Library.Shared
+
+@inherits LayoutComponentBase
+
+<Authenticator>
+    <Authorized>
+        <div class="page">
+            <div class="sidebar">
+                <NavMenu />
+            </div>
+
+            <main>
+                <article class="content px-4">
+                    @Body
+                </article>
+            </main>
+        </div>
+    </Authorized>
+
+    <Unauthorized>
+        <Login />
+    </Unauthorized>
+</Authenticator>

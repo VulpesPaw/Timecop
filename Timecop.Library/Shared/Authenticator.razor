@@ -1,0 +1,23 @@
+﻿@namespace Timecop.Library.Shared
+
+@if (@AppState.IsAuthorizationLoading)
+{
+    <italic>Loading Auth...</italic>
+}
+else if (@AppState.IsAuthorized) {
+    @Authorized
+}
+else {
+    @Unauthorized
+}
+
+@code {
+    [CascadingParameter]
+    public AppState AppState { get; set; } = null!;
+
+    [Parameter]
+    public RenderFragment? Authorized { get; set; }
+
+    [Parameter]
+    public RenderFragment? Unauthorized { get; set; }
+}

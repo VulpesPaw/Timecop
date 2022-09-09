@@ -1,0 +1,17 @@
+﻿@namespace Timecop.Library.Components.Authentication
+@inherits LoginStatusMessageBase
+
+@if(@LoginStatus is not null) {
+    <br />
+    <br />
+
+    @if(@LoginStatus?.Message is not null) 
+    {
+        <p><strong>Login status: </strong><br/>@LoginStatus.Message</p>
+    }
+
+    @if(@LoginStatus?.ErrorCode is not null) 
+    {
+        <p><strong>Error Code: </strong>@LoginStatus.ErrorCode</p>
+    }
+}

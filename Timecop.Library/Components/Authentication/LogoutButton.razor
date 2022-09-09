@@ -1,0 +1,23 @@
+﻿@namespace Timecop.Library.Components.Authentication
+
+@if(@ChildContent is null)
+{
+    <button @onclick="Logout">Logout</button>
+}
+else
+{
+    <div @onclick="Logout" class="nav-item px-3">@ChildContent</div>
+}
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [CascadingParameter]
+    public AppState AppState { get; set; } = null!;
+
+    private async void Logout()
+    {
+        await AppState.Logout();
+    }
+}

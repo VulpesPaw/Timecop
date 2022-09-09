@@ -1,0 +1,12 @@
+﻿@page "/"
+
+<h2>Welcome to AOXE!</h2>
+
+<WorklogContainer/>
+
+<pre>AppState.JiraEmail = @AppState.JiraEmail</pre>
+
+@code { 
+    [CascadingParameter]
+    public AppState AppState { get; set; } = null!;
+}

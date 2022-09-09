@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{107CC921-F9E9-47C0-B8BD-417082070E88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Timecop.Integrations.Tempo", "Timecop.Integrations.Tempo\Timecop.Integrations.Tempo.csproj", "{F2710422-BF6B-40E9-A879-22E32CB2F9EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Timecop.Integrations.Jira", "Timecop.Integrations.Jira\Timecop.Integrations.Jira.csproj", "{E63A90D8-9D71-43C5-A808-DE268058D2D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93BF2AC2-A1A9-41BE-9659-7A27D219F3E4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Timecop.Maui", "Timecop.Maui\Timecop.Maui.csproj", "{BC20D74F-3BB4-4D1D-9797-4DC73BFD6200}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Timecop.Library", "Timecop.Library\Timecop.Library.csproj", "{3218C507-2E62-4594-8ED7-A1596B5BE99E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Timecop.Web", "Timecop.Web\Timecop.Web.csproj", "{3A947372-0CB4-41FD-97C3-F504273D30D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2710422-BF6B-40E9-A879-22E32CB2F9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2710422-BF6B-40E9-A879-22E32CB2F9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2710422-BF6B-40E9-A879-22E32CB2F9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2710422-BF6B-40E9-A879-22E32CB2F9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63A90D8-9D71-43C5-A808-DE268058D2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63A90D8-9D71-43C5-A808-DE268058D2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63A90D8-9D71-43C5-A808-DE268058D2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63A90D8-9D71-43C5-A808-DE268058D2D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC20D74F-3BB4-4D1D-9797-4DC73BFD6200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC20D74F-3BB4-4D1D-9797-4DC73BFD6200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC20D74F-3BB4-4D1D-9797-4DC73BFD6200}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BC20D74F-3BB4-4D1D-9797-4DC73BFD6200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC20D74F-3BB4-4D1D-9797-4DC73BFD6200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3218C507-2E62-4594-8ED7-A1596B5BE99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3218C507-2E62-4594-8ED7-A1596B5BE99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3218C507-2E62-4594-8ED7-A1596B5BE99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3218C507-2E62-4594-8ED7-A1596B5BE99E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A947372-0CB4-41FD-97C3-F504273D30D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A947372-0CB4-41FD-97C3-F504273D30D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A947372-0CB4-41FD-97C3-F504273D30D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A947372-0CB4-41FD-97C3-F504273D30D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2710422-BF6B-40E9-A879-22E32CB2F9EE} = {107CC921-F9E9-47C0-B8BD-417082070E88}
+		{E63A90D8-9D71-43C5-A808-DE268058D2D8} = {107CC921-F9E9-47C0-B8BD-417082070E88}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9F85000-3D3E-4083-878D-7F57DD4F517E}
+	EndGlobalSection
+EndGlobal

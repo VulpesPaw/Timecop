@@ -1,0 +1,12 @@
+﻿@namespace Timecop.Library.Components.CRUD
+
+
+<input type="text" @bind="CrudFormState.IssueKey" @bind:event="oninput" placeholder="Issue Key" />
+<input type="number" @bind="CrudFormState.TimeSpentSeconds" @bind:event="oninput" placeholder="Time" @ref="TimeInputRefrence"/>
+<input type="text" @bind="CrudFormState.Description" @bind:event="oninput" placeholder="Description" />
+<input type="date" @bind="CrudFormState.Date" />
+<button @onclick="SubmitWorklog">Submit Worklog</button>
+
+@code{
+  
+}

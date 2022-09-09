@@ -1,0 +1,30 @@
+﻿@namespace Timecop.Library.Components.Authentication
+@inherits LoginBase
+
+<article class="content px-4">
+    <h3>Jira Login</h3>
+
+    <form @onsubmit="Login">
+        <!-- "ref" used to focus on input element on page load -->
+        <label for="email">User Email </label> <input @ref=EmailInputRef @bind="JiraEmail" placeholder="foobar@example.com" id="email"/>
+
+        <br/>
+
+        <label for="jira-token">API Token </label> <input @bind="JiraToken" placeholder="Jira API Token" id="jira-token"/>
+
+        <br/>
+
+        <button>Login</button>
+
+        <LoginStatusMessage LoginStatus="@LoginStatus"/>
+
+    </form>
+
+    <br/>
+
+    <a href="https://id.atlassian.com/manage-profile/security/api-tokens">Create your Jira API Token</a>
+
+    <br/>
+
+    <a href="https://help.marker.io/en/articles/1716823-how-to-generate-an-jira-api-token">Tutorial</a>
+</article>
