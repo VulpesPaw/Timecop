@@ -18,7 +18,7 @@ Our task by Effectsoft was to create an mvp *(minimal viable product)* during 
 
 ## Development
 
-Me and my collaborator pair-programmed together during this project. Neither of us had any knowledge of Blazor nor MAUI before the launch of this task.
+Me and my collaborator pair-programmed together during larger parts this project. Neither of us had any knowledge of Blazor nor MAUI before the launch of this task.
 
 We learned and developed this application over four weeks.
 
