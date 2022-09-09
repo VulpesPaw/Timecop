@@ -16,7 +16,7 @@ Our task by Effectsoft was to create an mvp *(minimal viable product)* during 
 - Submit and update issues with information including time spent, what's been done etc.
 - User API logins for access to users' projects and therethrough issues.
 
-### Development
+## Development
 
 Me and my collaborator pair-programmed together during this project. Neither of us had any knowledge of Blazor nor MAUI before the launch of this task.
 
@@ -26,13 +26,15 @@ We got access to Effectsofts test environments during this project, with access 
 
 This project was version-manged with git and stored on BitBucket.
 
+We got basic pre-developed AOI and convertion -code (out-dated) and soruces of API documentation.
+
 ### Images
 
 ##### Issue Tracker
 
 Issue tracker page is where issues can be searched, selected, and updated
 
-<img src="file:///D:/Literacy/Portfolio/images/timecop_preview.jpg" title="" alt="timecop_preview.jpg" width="382">
+<img src="https://user-images.githubusercontent.com/63596133/189354756-d96ecc6d-65d3-430d-83a7-d065fa8a3613.jpg" title="" alt="timecop_preview.jpg" height="500">
 
 ### Collaborator
 
@@ -56,4 +58,5 @@ Bearer Serialized Token is the access token to Atlassian/Jira/Tempo API.
 
 Prior Git History has been terminated due to sensitive server data.
 
-# 
+### Permision
+Published with Permission of Effectsoft
