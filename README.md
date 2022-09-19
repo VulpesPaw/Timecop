@@ -18,7 +18,7 @@ Our task by Effectsoft was to create an mvp *(minimal viable product)* during 
 
 ## Development
 
-Me and my collaborator pair-programmed together during larger parts this project. Neither of us had any knowledge of Blazor nor MAUI before the launch of this task.
+Me and my collaborator pair-programmed together during larger parts of this project. Neither of us had any knowledge of Blazor nor MAUI before the launch of this task.
 
 We learned and developed this application over four weeks.
 
@@ -26,13 +26,26 @@ We got access to Effectsofts test environments during this project, with access 
 
 This project was version-manged with git and stored on BitBucket.
 
-We got basic pre-developed API and convertion -code (out-dated) and soruces of API documentation.
+We got basic pre-developed API and conversion -code (outdated) and sources of API documentation.
+
+We used Jira for issue and implementation tracking, making use of the MoSCoW priciple for issue prioritization.
+
+#### The code above features but is not limited to the following:
+
+- MAUI project (MAUI-Beta); Cross-platform
+
+- Blazer framework, developed in .Net 6; C#
+
+- Atlassian, Jira, Tempo - API connection with CRUD & Authentication
+
+- Time-tracking 
+
 
 ### Images
 
 ##### Issue Tracker
 
-Issue tracker page is where issues can be searched, selected, and updated
+Issue tracker page is where issues can be searched, selected, and updated.
 
 <img src="https://user-images.githubusercontent.com/63596133/189354756-d96ecc6d-65d3-430d-83a7-d065fa8a3613.jpg" title="" alt="timecop_preview.jpg" height="500">
 
@@ -48,7 +61,7 @@ This project has been serialized from sensitive information within
 
 `.\Timecop.Integrations.Tempo\TempoService.cs.`
 
-Bearer Serialized Token is the access token to Atlassian/Jira/Tempo API.
+Bearer Serialized Token is the access token for the Atlassian/Jira/Tempo API.
 
 
 
@@ -58,5 +71,5 @@ Bearer Serialized Token is the access token to Atlassian/Jira/Tempo API.
 
 Prior Git History has been terminated due to sensitive server data.
 
-### Permision
+### Permission
 Published with Permission of Effectsoft
